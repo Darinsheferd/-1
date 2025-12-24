@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Базовая стилизация */
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+/* Удобный контейнер */
+.container-page {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+/* Карточки */
+.card {
+  @apply bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-soft;
+}
+
+.card-muted {
+  @apply bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4;
+}
+
+/* Основная кнопка */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-brand-500/30 hover:bg-brand-400 transition;
+}
+
+/* Вторая кнопка */
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-800/80 transition;
+}
+
+/* Input / textarea */
+.input {
+  @apply w-full rounded-xl border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500/70 focus:border-brand-500/70;
+}
+
+/* Тайтлы */
+.page-title {
+  @apply text-3xl md:text-4xl font-semibold tracking-tight text-slate-50;
+}
+.page-subtitle {
+  @apply text-base text-slate-400 max-w-2xl;
+}
